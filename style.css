@@ -1,4 +1,5 @@
 
+/* --- Scandinavian Modern Academic Theme (Version 11) --- */
 :root {
     --bg-color: #fcfaf7;
     --text-color: #333333;
@@ -11,6 +12,8 @@
 }
 
 * { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -72,7 +75,7 @@ main { padding: 60px 0; }
 h2, h3 { color: var(--accent-color); font-weight: 400; }
 h2 { font-size: 2rem; margin-bottom: 35px; }
 
-/* Grid Layouts */
+/* Grid for About and Projects */
 .about-grid { display: flex; gap: 60px; align-items: flex-start; }
 .profile-side { flex: 0 0 280px; text-align: center; }
 .profile-img { width: 100%; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
@@ -84,10 +87,14 @@ h2 { font-size: 2rem; margin-bottom: 35px; }
     border: 1px solid var(--border-color);
     margin-bottom: 40px;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 40px;
 }
 
 .project-text { flex: 1.8; }
+.project-text h4 { margin-top: 0; color: var(--nav-active); font-size: 1.4rem; margin-bottom: 15px; }
+
 .project-image-box {
     flex: 1;
     min-width: 280px;
@@ -103,19 +110,27 @@ h2 { font-size: 2rem; margin-bottom: 35px; }
 }
 .project-image-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
-/* Lighter Side Hero */
+/* Lighter Side Styles */
 .landscape-hero {
     width: 100%;
     height: 380px;
-    background-color: #eee;
     margin-bottom: 50px;
     overflow: hidden;
     border-radius: 4px;
 }
 .landscape-hero img { width: 100%; height: 100%; object-fit: cover; }
 
-.lighter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-.interest-card { background: white; padding: 30px; border: 1px solid var(--border-color); }
+.lighter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.interest-card {
+    background: white;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+}
+.interest-card h4 { margin-top: 0; color: var(--nav-active); }
 
 /* Buttons */
 .btn {
@@ -133,21 +148,16 @@ h2 { font-size: 2rem; margin-bottom: 35px; }
 .btn-spotify { border-color: #1DB954; color: #1DB954; }
 .btn-spotify:hover { background-color: #1DB954; color: white; }
 
-/* BibBase Cleanup */
-.bibbase_paper a[title="Open"], 
-.bibbase_paper a i.fa-external-link-alt { 
-    display: none !important; 
-}
+/* BibBase Fix */
+.bibbase_paper a[title="Open"], .bibbase_paper i.fa-external-link-alt { display: none !important; }
 
 footer { padding: 80px 0; text-align: center; font-size: 0.85rem; color: #bbb; border-top: 1px solid var(--border-color); }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
-    .container { padding: 0 20px; }
+    .container { padding: 0 25px; }
     .about-grid, .project-card, .lighter-grid { flex-direction: column; display: block; }
     .profile-side { margin-bottom: 40px; width: 100%; }
     .project-image-box { width: 100%; max-width: 100%; height: auto; min-height: 200px; margin-top: 20px; }
     .interest-card { margin-bottom: 20px; }
     .landscape-hero { height: 220px; }
-    header h1 { font-size: 1.8rem; }
 }
