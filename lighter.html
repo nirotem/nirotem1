@@ -2,79 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Lighter Side | Dr. Nir Rotem</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nir Rotem | Lighter Side</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Dr. Nir Rotem</h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Research</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="teaching.html">Teaching & Engagement</a></li>
-                    <li><a href="lighter.html" class="active">Lighter Side</a></li>
-                </ul>
+                <ul><li><a href="index.html" >About</a></li><li><a href="projects.html" >Research</a></li><li><a href="publications.html" >Publications</a></li><li><a href="teaching.html" >Teaching & Engagement</a></li><li><a href="lighter.html" class="active">Lighter Side</a></li></ul>
             </nav>
         </div>
     </header>
-
     <main class="container">
-        <h2>The Lighter Side</h2>
-        <p>Beyond academia, I value meaningful engagement with human complexity through physical exploration, literature, and cinema.</p>
+        
+<h2>The Lighter Side</h2>
+<div class="landscape-hero">
+    <img src="images/landscape.jpg" alt="Landscape Expedition">
+</div>
+<div class="lighter-grid">
+    <div class="interest-card">
+        <h3>Expeditions</h3>
+        <p>Notable journeys include a six-week solo trek in Western Mongolia and three months crossing the South Island of New Zealand on foot.</p>
+    </div>
+    <div class="interest-card">
+        <h3>Music & Spotify</h3>
+        <p>Music is a constant while I read and write, from Jazz and Classical to Folk (Bob Dylan) and Indie.</p>
+        <a href="https://open.spotify.com/user/nirotem?si=ed7b586c76174ee7" class="btn btn-spotify" target="_blank">
+            <i class="fab fa-spotify"></i> My Spotify Profile
+        </a>
+    </div>
+</div>
 
-        <section class="lighter-section">
-            <h3>Expeditions & Wanderlust</h3>
-            <div class="lighter-grid">
-                <div class="interest-card">
-                    <h4>On Foot & Two Wheels</h4>
-                    <p>I have a passion for backpacking and cycle touring. Notable journeys include a <strong>six-week solo trek in Western Mongolia</strong> and <strong>three months crossing the South Island of New Zealand on foot</strong>. These experiences sparked my interest in different cultures long before my sociological career.</p>
-                </div>
-                <div class="interest-card">
-                    <h4>Peaks & Theory</h4>
-                    <p>In Tajikistan, I encountered <em>Friedrich Engels Peak</em>. There is a <em>Marx Peak</em> nearby as well, which I didn't have the chance to see on that trip—perhaps a sign that foreshadowed my current sociological path.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="lighter-section">
-            <h3>The Library & The Screen</h3>
-            <div class="lighter-grid">
-                <div class="interest-card">
-                    <h4>Reading</h4>
-                    <p>Recent favorites that spark my imagination:</p>
-                    <ul>
-                        <li><em>The Gardener's Year</em> (Karel Čapek)</li>
-                        <li><em>Kafka on the Shore</em> (Haruki Murakami)</li>
-                        <li><em>The Briefcase</em> (Hiromi Kawakami)</li>
-                        <li><em>Lohikäärmekylpy</em> (Eeva Tikka)</li>
-                    </ul>
-                </div>
-                <div class="interest-card">
-                    <h4>Cinema</h4>
-                    <p>I prefer the curated depth of <strong>Mubi</strong> over mainstream choices. Recent titles that stayed with me:</p>
-                    <ul>
-                        <li><em>Drive My Car</em> (Ryusuke Hamaguchi)</li>
-                        <li><em>Compartment No. 6</em> (Juho Kuosmanen)</li>
-                        <li><em>Flee</em> (Jonas Poher Rasmussen)</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="lighter-section">
-            <h3>Music</h3>
-            <div class="interest-card">
-                <p>Music is a constant while I read and write, from <strong>Jazz and Classical</strong> to <strong>Folk (Bob Dylan)</strong> and <strong>Indie</strong>. Seeing <em>Arcade Fire</em> at the Montreux Jazz Festival in 2011 remains a highlight.</p>
-            </div>
-        </section>
     </main>
-
     <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> by Nir Rotem</p>
+            <p>© <span id="year"></span> by Nir Rotem</p>
         </div>
     </footer>
     <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>

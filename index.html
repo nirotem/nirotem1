@@ -2,74 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Nir Rotem | About</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
             <h1>Dr. Nir Rotem</h1>
             <nav>
-                <ul>
-                    <li><a href="index.html" class="active">About</a></li>
-                    <li><a href="projects.html">Research</a></li>
-                    <li><a href="publications.html">Publications</a></li>
-                    <li><a href="teaching.html">Teaching & Engagement</a></li>
-                    <li><a href="lighter.html">Lighter Side</a></li>
-                </ul>
+                <ul><li><a href="index.html" class="active">About</a></li><li><a href="projects.html" >Research</a></li><li><a href="publications.html" >Publications</a></li><li><a href="teaching.html" >Teaching & Engagement</a></li><li><a href="lighter.html" >Lighter Side</a></li></ul>
             </nav>
         </div>
     </header>
-
     <main class="container">
-        <div class="about-grid">
-            <div class="profile-side">
-                <img src="images/profile.jpg" alt="Dr. Nir Rotem" class="profile-img">
-                <div class="profile-info">
-                    <p class="name">Dr. Nir Rotem</p>
-                    <p class="role">Sociologist</p>
-                    <p class="role">The Hebrew University of Jerusalem</p>
-                </div>
-            </div>
-            
-            <div class="bio-content">
-                <h2>Sociologist & Researcher</h2>
-                <p>
-                    I am a sociologist examining the construction and transformation of social knowledge and the contestations involved in its global circulation. My research focuses on the transformation of and contestations around social knowledge at the global level. Specifically, I examine the plurality of global scripts and the dynamics involved when diverse sets of knowledge arrive at different social settings.
-                </p>
-                <p>
-                    Currently, I am a David and Rosa Orzen Research Fellow and a Lady Davis postdoctoral fellow at the Hebrew University of Jerusalem. I earned my PhD from the University of Minnesota in 2022. My research agenda is driven by an interest in the role of institutions and the dynamics between culture and knowledge. I utilize a diverse methodological toolkit, encompassing historical ethnography, archival work, and quantitative approaches including survey analysis, regression modeling, and machine learning.
-                </p>
-                <p>
-                    Looking ahead, I am eager to delve into the field of natural language processing, recognizing its potential to bridge the divide between traditional text-based coding and the growing importance of big data. I propose addressing the heterogeneity of contemporary global society by developing new measures, such as a "Think Tank count," to gain a deeper understanding of the shaping and spread of ideas and policies worldwide.
-                </p>
-
-                <h3>Research Interests</h3>
-                <ul class="interests-grid">
-                    <li>Sociological neoinstitutionalism</li>
-                    <li>World society theory</li>
-                    <li>Sociology of knowledge & culture</li>
-                    <li>Global rise of illiberalism</li>
-                    <li>Sociology of science & higher education</li>
-                    <li>Social theory (Classic & Contemporary)</li>
-                    <li>Humanitarianism & collective aid</li>
-                </ul>
-
-                <div class="contact-box">
-                    <p><strong>Contact:</strong> nir.rotem [at] mail.huji.ac.il</p>
-                    <div class="social-btns">
-                        <a href="https://scholar.google.com/citations?user=bq1UO1sAAAAJ&hl=en" class="btn" target="_blank">Google Scholar</a>
-                        <a href="https://orcid.org/0000-0001-6889-2832" class="btn" target="_blank">ORCID</a>
-                        <a href="https://cris.huji.ac.il/en/persons/nir-rotem/" class="btn" target="_blank">HUJI Profile</a>
-                    </div>
-                </div>
+        
+<div class="about-grid">
+    <div class="profile-side">
+        <img src="images/profile.jpg" alt="Dr. Nir Rotem" class="profile-img">
+        <div class="profile-info">
+            <p class="name">Dr. Nir Rotem</p>
+            <p class="role">Sociologist</p>
+            <p class="role">The Hebrew University of Jerusalem</p>
+        </div>
+    </div>
+    <div class="bio-content">
+        <h2>About Me</h2>
+        <p>I am a sociologist examining the construction and transformation of social knowledge and the contestations involved in its global circulation. My work lies at the intersection of transnational sociology, the sociology of knowledge, and political sociology.</p>
+        <p>Currently, I serve as a Research Fellow at the Hebrew University of Jerusalem. I earned my PhD from the University of Minnesota (2022). My doctoral dissertation investigated gradual shifts in the humanitarian idea through a historical ethnography of the UNHCR.</p>
+        <h3>Research Interests</h3>
+        <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding-left: 20px;">
+            <li>Sociological neoinstitutionalism</li>
+            <li>World society theory</li>
+            <li>Sociology of knowledge & culture</li>
+            <li>Global rise of illiberalism</li>
+            <li>Sociology of science & higher education</li>
+        </ul>
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee;">
+            <p><strong>Contact:</strong> nir.rotem [at] mail.huji.ac.il</p>
+            <div class="social-btns">
+                <a href="https://scholar.google.com/citations?user=bq1UO1sAAAAJ&hl=en" class="btn" target="_blank">Google Scholar</a>
+                <a href="https://orcid.org/0000-0001-6889-2832" class="btn" target="_blank">ORCID</a>
+                <a href="https://cris.huji.ac.il/en/persons/nir-rotem/" class="btn" target="_blank">HUJI Profile</a>
             </div>
         </div>
-    </main>
+    </div>
+</div>
 
+    </main>
     <footer>
         <div class="container">
-            <p>&copy; <span id="year"></span> by Nir Rotem</p>
+            <p>© <span id="year"></span> by Nir Rotem</p>
         </div>
     </footer>
     <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
