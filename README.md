@@ -1,10 +1,10 @@
 # Academic Website for Dr. Nir Rotem
 
-This ZIP contains the source code for your professional academic website.
+This ZIP contains the source code for your professional website.
 
 ## Setup Instructions
 1. Extract the ZIP file.
-2. In the `images/` folder, place your images with these EXACT filenames:
+2. In the `images/` folder, place your images with these filenames:
    - **profile.jpg** (Profile picture)
    - **project-illiberalism.jpg**
    - **project-trust.jpg**
@@ -14,6 +14,7 @@ This ZIP contains the source code for your professional academic website.
    - **project-judicial.jpg**
    - **project-unhcr.jpg**
    - **project-others.jpg**
-3. Ensure they use the `.jpg` extension (all lowercase).
-4. Upload all files (excluding this README) to your GitHub repository (e.g., `username.github.io`).
-5. Enable GitHub Pages in Settings.
+   - **project-women.jpg**
+3. Ensure they use the `.jpg` extension (lowercase).
+4. Upload all files (excluding this README) to your GitHub repository.
+5. Enable GitHub Pages in settings.
