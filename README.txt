@@ -1,27 +1,19 @@
+# Academic Website for Dr. Nir Rotem
 
-# Professional Academic Website - Dr. Nir Rotem
+This package contains the source code for your professional website.
 
-This ZIP contains the complete code for your professional website.
-
-## Folder Structure:
-- index.html (About)
-- projects.html (Research)
-- publications.html (BibBase/Zotero)
-- teaching.html (Teaching & Engagement)
-- lighter.html (The Lighter Side - Expanded)
-- style.css (Scandinavian Modern Design)
-- images/ (Folder for photos)
-
-## Setup Instructions:
+## Setup Instructions
 1. Extract the ZIP file.
-2. Inside the 'images' folder, place your profile photo and name it 'profile.jpg'.
-3. For the projects page, place the following images in the 'images' folder (or rename them in projects.html):
+2. Put your images in the 'images/' folder with these filenames:
+   - profile.jpg
    - project-illiberalism.jpg
+   - project-trust.jpg
    - project-computational.jpg
    - project-productivity.jpg
    - project-dropout.jpg
    - project-judicial.jpg
    - project-unhcr.jpg
    - project-others.jpg
-4. Upload all files to your GitHub repository (e.g., yourname.github.io).
-5. Enable GitHub Pages in your repository settings.
+3. Ensure the extension is '.jpg' (lowercase).
+4. Upload all files (excluding this README) to your GitHub repository.
+5. Enable GitHub Pages in settings.
