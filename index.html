@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nir Rotem | About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Nir Rotem</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">About</a></li>
+                    <li><a href="projects.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="lighter.html">Lighter Side</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-section">
+            <div class="profile-container">
+                <!-- Change your image here: images/profile.jpg -->
+                <img src="images/profile.jpg" alt="Nir Rotem" class="profile-pic">
+                
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=bq1UO1sAAAAJ&hl=en" target="_blank">Google Scholar</a>
+                    <a href="https://orcid.org/0000-0001-6889-2832" target="_blank">ORCID</a>
+                    <a href="https://cris.huji.ac.il/en/persons/nir-rotem/" target="_blank">HUJI Profile</a>
+                </div>
+                <p class="email">nir.rotem [at] mail.huji.ac.il</p>
+            </div>
+
+            <div class="bio-text">
+                <h2>Sociologist & Researcher</h2>
+                <p>
+                    I am a sociologist examining the construction and transformation of social knowledge and the contestations involved in its global circulation. 
+                    Currently, I am a <strong>Guest Professor</strong> at the University of Graz (2025) and a <strong>Research Fellow</strong> at the Hebrew University of Jerusalem.
+                </p>
+                
+                <h3>Research Interests</h3>
+                <p>
+                    My work lies at the intersection of transnational sociology, the sociology of knowledge, and political sociology. I am particularly interested in:
+                </p>
+                <ul>
+                    <li>The global rise of illiberalism and its institutional drivers.</li>
+                    <li>Sociological neoinstitutionalism and world society theory.</li>
+                    <li>Sociology of science, higher education, and computational culture.</li>
+                    <li>The transformation of humanitarianism and human rights.</li>
+                </ul>
+
+                <p>
+                    I earned my PhD from the University of Minnesota (2022). My dissertation investigated the historical transformation of the humanitarian field through the case of the UNHCR.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> by Nir Rotem</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

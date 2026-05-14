@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lighter Side | Nir Rotem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Nir Rotem</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="lighter.html" class="active">Lighter Side</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Beyond Academia</h2>
+        <p>While my professional life is dedicated to sociology, I find balance through a few core passions.</p>
+
+        <div class="personal-interests">
+            <div class="interest-block">
+                <h3>Cycle Touring & Trekking</h3>
+                <p>I am an avid cycle tourist and backpacker. Some highlights include a six-week solo trek in Western Mongolia and a three-month journey crossing the South Island of New Zealand on foot.</p>
+            </div>
+
+            <div class="interest-block">
+                <h3>Reading</h3>
+                <p>I am a dedicated reader of fiction. Recent favorites include Karel Čapek's <em>The Gardener's Year</em> and Haruki Murakami's <em>Kafka on the Shore</em>.</p>
+            </div>
+
+            <div class="interest-block">
+                <h3>Cinema</h3>
+                <p>I have a keen interest in cinema, particularly films that engage with human complexity. My go-to platform is Mubi, and I've recently enjoyed titles like <em>Drive My Car</em> and <em>Compartment No. 6</em>.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> by Nir Rotem</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>

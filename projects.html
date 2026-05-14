@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Projects | Nir Rotem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Nir Rotem</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html" class="active">Research</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                    <li><a href="lighter.html">Lighter Side</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Research Projects</h2>
+        <p>A selection of my ongoing and recent research initiatives, bridging qualitative historical analysis with modern quantitative methods.</p>
+
+        <div class="project-grid">
+            <!-- Project 1: Illiberalism -->
+            <div class="project-card">
+                <h3>The Global Rise of Illiberalism</h3>
+                <p>Examining the dismantling of liberal principles like judicial independence and academic freedom through a neo-institutional lens.</p>
+                <img src="images/illiberalism-graph.png" alt="Illiberalism Trends" class="project-img">
+            </div>
+
+            <!-- Project 2: Computational Culture -->
+            <div class="project-card">
+                <h3>The Rise of Computational Culture</h3>
+                <p>In collaboration with Liron Shani, I explore how the "big data" turn and computational thinking are reshaping scientific logic in the life sciences and humanities.</p>
+                <img src="images/comp-culture-graph.png" alt="Computational Culture" class="project-img">
+            </div>
+
+            <!-- Project 3: University Museums -->
+            <div class="project-card">
+                <h3>University Museums & Global Knowledge</h3>
+                <p>Working with Gili Drori to study how academic knowledge is enacted publicly through university museums globally.</p>
+                <img src="images/museums-graph.png" alt="University Museums" class="project-img">
+            </div>
+
+            <!-- Project 4: Student Attrition -->
+            <div class="project-card">
+                <h3>The "Existential Dropout"</h3>
+                <p>A decade-long study using machine learning to identify why high-achieving students decide to leave academia.</p>
+                <img src="images/dropout-graph.png" alt="Dropout Patterns" class="project-img">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> by Nir Rotem</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
