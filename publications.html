@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications | Dr. Nir Rotem</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <div class="container">
             <h1>Dr. Nir Rotem</h1>
@@ -25,7 +23,7 @@
 
     <main class="container">
         <h2>Selected Publications</h2>
-        <div id="bibbase-feed">
+        <div id="bibbase-container">
             <script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fzotero-mypublications%2Fnirotem&jsonp=1"></script>
         </div>
     </main>
@@ -35,9 +33,6 @@
             <p>&copy; <span id="year"></span> by Nir Rotem</p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 </html>

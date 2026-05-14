@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Nir Rotem | About</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <div class="container">
             <h1>Dr. Nir Rotem</h1>
@@ -24,46 +22,47 @@
     </header>
 
     <main class="container">
-        <section class="about-section">
-            <div class="profile-container">
-                <!-- Image path: images/profile.jpg -->
-                <img src="images/profile.jpg" alt="Dr. Nir Rotem" class="profile-pic">
-                <div class="profile-intro">
-                    <h2>Dr. Nir Rotem</h2>
+        <div class="about-grid">
+            <div class="profile-side">
+                <img src="images/profile.jpg" alt="Dr. Nir Rotem" class="profile-img">
+                <div class="profile-info">
+                    <p class="name">Dr. Nir Rotem</p>
                     <p class="role">Sociologist</p>
-                    <p class="affiliation">The Hebrew University of Jerusalem</p>
+                    <p class="role">The Hebrew University of Jerusalem</p>
                 </div>
             </div>
-
+            
             <div class="bio-content">
-                <h3>About Me</h3>
+                <h2>Sociologist & Researcher</h2>
                 <p>
                     I am a sociologist examining the construction and transformation of social knowledge and the contestations involved in its global circulation. My work lies at the intersection of transnational sociology, the sociology of knowledge, and political sociology.
                 </p>
                 <p>
-                    Currently, I serve as a Research Fellow at the Hebrew University of Jerusalem. I earned my PhD from the University of Minnesota (2022). My research focuses on the plurality of global scripts and the dynamics involved when diverse sets of knowledge arrive at different social settings.
+                    Currently, I serve as a Research Fellow at the Hebrew University of Jerusalem. I earned my PhD from the University of Minnesota (2022). My doctoral research investigated the historical transformation of the humanitarian field through a historical ethnography of the United Nations High Commissioner for Refugees (UNHCR), tracking the infiltration of development and human rights knowledge into the humanitarian field.
+                </p>
+                <p>
+                    My research agenda is driven by an interest in the role of institutions and the dynamics between culture and knowledge. I utilize a diverse methodological toolkit, encompassing historical ethnography, archival work, and quantitative approaches including regression modeling and machine learning.
                 </p>
 
                 <h3>Research Interests</h3>
-                <ul class="interests-grid">
-                    <li>Sociological neoinstitutionalism</li>
-                    <li>Sociology of knowledge</li>
-                    <li>Global rise of illiberalism</li>
-                    <li>Social theory</li>
-                    <li>Humanitarianism and human rights</li>
-                    <li>Sociology of science & higher education</li>
+                <ul>
+                    <li>Sociological Neoinstitutionalism & World Society Theory</li>
+                    <li>Global Rise of Illiberalism (Judicial Independence & Academic Freedom)</li>
+                    <li>Sociology of Knowledge & Culture</li>
+                    <li>Sociology of Science & Higher Education</li>
+                    <li>Humanitarianism & Collective Aid</li>
                 </ul>
 
                 <div class="contact-links">
                     <p>Email: nir.rotem [at] mail.huji.ac.il</p>
-                    <div class="buttons">
+                    <div class="social-btns">
                         <a href="https://scholar.google.com/citations?user=bq1UO1sAAAAJ&hl=en" class="btn" target="_blank">Google Scholar</a>
                         <a href="https://orcid.org/0000-0001-6889-2832" class="btn" target="_blank">ORCID</a>
                         <a href="https://cris.huji.ac.il/en/persons/nir-rotem/" class="btn" target="_blank">HUJI Profile</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -71,9 +70,6 @@
             <p>&copy; <span id="year"></span> by Nir Rotem</p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 </html>

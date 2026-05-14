@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Lighter Side | Dr. Nir Rotem</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <div class="container">
             <h1>Dr. Nir Rotem</h1>
@@ -24,19 +22,56 @@
     </header>
 
     <main class="container">
-        <h2>Beyond the Desk</h2>
-        <p>I value meaningful engagement with human complexity, whether through my research or personal life.</p>
-        
-        <div class="personal-interests">
-            <div class="interest">
-                <h3>Cycle Touring & Trekking</h3>
-                <p>I am an avid backpacker and cycle tourist. My travels have taken me from solo treks in western Mongolia to crossing the South Island of New Zealand on foot.</p>
+        <h2>The Lighter Side</h2>
+        <p>Academia is a central part of my life, but it is not all that occupies my mind. I value meaningful engagement with human complexity—be it through physical exploration of the world, literature, or cinema.</p>
+
+        <section class="lighter-section">
+            <h3>Expeditions & Wanderlust</h3>
+            <div class="lighter-grid">
+                <div class="interest-card">
+                    <h4>On Foot & Two Wheels</h4>
+                    <p>I have a lifelong passion for the great outdoors, specifically backpacking and cycle touring. Over the years, these trips have grown from monthly overnight hikes to long-distance solo expeditions.</p>
+                    <p>Notable journeys include a <strong>six-week solo trek in Western Mongolia</strong> and <strong>three months crossing the South Island of New Zealand on foot</strong>. These experiences sparked my interest in different cultures long before my sociological career began.</p>
+                </div>
+                <div class="interest-card">
+                    <h4>The "Sociological" Peaks</h4>
+                    <p>During a trip to Tajikistan, I encountered <em>Friedrich Engels Peak</em>. There is a <em>Marx Peak</em> nearby as well, which I missed on that trip—perhaps a foreshadowing of my future in social theory. I've spent countless hours sharing tea, vodka, and kumis (fermented mare’s milk) with nomads, which deeply influenced my perspective on human interaction.</p>
+                </div>
             </div>
-            <div class="interest">
-                <h3>Reading & Cinema</h3>
-                <p>I enjoy reading fiction (such as Karel Čapek and Murakami) and exploring films that engage with social and cultural depth.</p>
+        </section>
+
+        <section class="lighter-section">
+            <h3>The Library & The Screen</h3>
+            <div class="lighter-grid">
+                <div class="interest-card">
+                    <h4>Reading</h4>
+                    <p>When I'm not in the field or the archive, I turn to fiction. Recent gems include:</p>
+                    <ul>
+                        <li><em>The Gardener's Year</em> by Karel Čapek</li>
+                        <li><em>Kafka on the Shore</em> by Haruki Murakami</li>
+                        <li><em>The Briefcase</em> by Hiromi Kawakami</li>
+                        <li><em>Lohikäärmekylpy</em> by Eeva Tikka</li>
+                    </ul>
+                </div>
+                <div class="interest-card">
+                    <h4>Cinema</h4>
+                    <p>I find mainstream streaming services often lack depth, so I frequently turn to <strong>Mubi</strong> for "arty" and thoughtful cinema. Recent watches that stayed with me:</p>
+                    <ul>
+                        <li><em>Drive My Car</em> (Ryusuke Hamaguchi)</li>
+                        <li><em>Compartment No. 6</em> (Juho Kuosmanen)</li>
+                        <li><em>Flee</em> (Jonas Poher Rasmussen)</li>
+                        <li><em>Close</em> (Lukas Dhont)</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="lighter-section">
+            <h3>Atmospheres & Music</h3>
+            <div class="interest-card">
+                <p>Music is a constant companion while I read and write. My tastes are eclectic, ranging from <strong>Jazz and Classical</strong> to <strong>Folk (Bob Dylan)</strong> and <strong>Indie</strong>. One of my favorite concert memories remains <em>Arcade Fire</em> at the Montreux Jazz Festival in 2011.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -44,9 +79,6 @@
             <p>&copy; <span id="year"></span> by Nir Rotem</p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById("year").innerHTML = new Date().getFullYear();
-    </script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 </html>
