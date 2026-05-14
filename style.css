@@ -7,6 +7,7 @@
     --border-color: #e8e4e0;
     --link-color: #7a8d9b;
     --nav-active: #2c3e50;
+    --card-bg: #ffffff;
 }
 
 * { box-sizing: border-box; }
@@ -128,35 +129,38 @@ h2 { font-size: 1.6rem; margin-bottom: 30px; }
 }
 
 .project-block { margin-bottom: 60px; }
+
 .project-card { 
-    background: white; 
-    padding: 30px; 
+    background: var(--card-bg); 
+    padding: 25px; 
     border: 1px solid var(--border-color); 
     margin-bottom: 30px; 
 }
 
-.project-card h4 { margin-top: 0; color: var(--nav-active); }
+.project-card h4 { margin-top: 0; color: var(--nav-active); margin-bottom: 15px; }
 
-.project-image-container {
+.project-image-wrapper {
     margin-top: 20px;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
     background: #fdfdfd;
-    border: 1px dashed #ddd;
-    min-height: 200px;
+    border: 1px solid #eee;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.project-image-container img {
+.project-image-wrapper img {
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* Lighter Side */
 .lighter-section { margin-bottom: 50px; }
 .lighter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-.interest-card { background: #fff; padding: 25px; border: 1px solid var(--border-color); }
-.interest-card h4 { margin-top: 0; color: var(--accent-color); }
+.interest-card { background: white; padding: 25px; border: 1px solid var(--border-color); }
 
 footer {
     padding: 60px 0;
@@ -168,6 +172,5 @@ footer {
 
 @media (max-width: 768px) {
     .about-grid, .lighter-grid { grid-template-columns: 1fr; }
-    nav ul { flex-wrap: wrap; gap: 10px; }
     .container { padding: 0 20px; }
 }
