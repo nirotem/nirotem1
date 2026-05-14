@@ -77,14 +77,12 @@ h2 { font-size: 1.7rem; margin-bottom: 35px; }
 }
 
 .profile-side { text-align: center; }
-
 .profile-img {
     width: 100%;
     max-width: 250px;
     border-radius: 3px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.04);
 }
-
 .profile-info { margin-top: 15px; }
 .profile-info .name { font-weight: 600; font-size: 1.15rem; margin: 0; }
 .profile-info .role { font-size: 0.95rem; color: #777; margin: 6px 0; }
@@ -94,14 +92,12 @@ h2 { font-size: 1.7rem; margin-bottom: 35px; }
     padding: 25px 0;
     border-top: 1px solid var(--border-color);
 }
-
 .social-btns {
     display: flex;
     gap: 15px;
     margin-top: 20px;
     flex-wrap: wrap;
 }
-
 .btn {
     text-decoration: none;
     font-size: 0.8rem;
@@ -110,10 +106,9 @@ h2 { font-size: 1.7rem; margin-bottom: 35px; }
     padding: 7px 16px;
     transition: all 0.3s ease;
 }
-
 .btn:hover { background-color: var(--accent-color); color: white; }
 
-/* Projects Page - SPLIT LAYOUT */
+/* Projects Page - SPLIT LAYOUT FIX */
 .project-intro {
     font-style: italic;
     color: #555;
@@ -125,18 +120,20 @@ h2 { font-size: 1.7rem; margin-bottom: 35px; }
 
 .project-block { margin-bottom: 70px; }
 
+/* The container of the project card */
 .project-card {
     background: var(--card-bg);
     padding: 35px;
     border: 1px solid var(--border-color);
     margin-bottom: 40px;
-    display: flex; /* Side-by-side */
-    align-items: center;
+    display: flex; /* Ensures side-by-side on desktop */
+    flex-direction: row;
+    align-items: flex-start;
     gap: 40px;
 }
 
 .project-content {
-    flex: 2; /* Text takes more space */
+    flex: 2; /* Text column takes 66% approx */
 }
 
 .project-content h4 { 
@@ -146,20 +143,21 @@ h2 { font-size: 1.7rem; margin-bottom: 35px; }
     margin-bottom: 15px; 
 }
 
+/* Image Column Wrapper */
 .project-image-wrapper {
-    flex: 1; /* Image column */
+    flex: 1; /* Image column takes 33% approx */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background: #ffffff;
     border: 1px solid #f2f2f2;
     padding: 10px;
-    min-height: 200px;
+    min-height: 180px;
+    max-width: 300px; /* Prevents the image column from being too wide */
 }
 
 .project-image-wrapper img {
-    max-width: 100%;
-    max-height: 180px;
+    max-width: 100%; /* Important: makes image responsive to the 33% column */
     height: auto;
     object-fit: contain;
 }
@@ -177,14 +175,18 @@ footer {
     border-top: 1px solid var(--border-color);
 }
 
+/* MOBILE RESPONSIVE FIX */
 @media (max-width: 768px) {
     .about-grid, .lighter-grid { grid-template-columns: 1fr; }
     .project-card {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stack vertically on mobile */
+        text-align: left;
+        gap: 20px;
     }
     .project-image-wrapper {
         width: 100%;
+        max-width: 100%;
+        min-height: auto;
     }
     .container { padding: 0 25px; }
 }
