@@ -1,20 +1,24 @@
-# Academic Website - Dr. Nir Rotem
+# Dr. Nir Rotem - Academic Website
 
-This is a personal academic website designed for GitHub Pages.
+This package contains the source code for your professional academic website.
 
-## File Structure
-- `index.html`: About page with bio and research interests.
-- `projects.html`: Research projects (Ongoing & Completed).
-- `publications.html`: Dynamic publication feed via BibBase/Zotero.
-- `teaching.html`: Teaching history and engagement.
-- `lighter.html`: Personal side/interests.
-- `style.css`: Main styling file.
-- `images/`: Folder for images.
-  - `profile.jpg`: Your profile photo.
-  - `*-graph.png`: Placeholders for your research charts.
+## Setup Instructions:
+1. Extract the ZIP file.
+2. Ensure you have an `images/` folder in the root directory.
+3. Add your images to the `images/` folder with the following filenames:
+   - **profile.jpg** (Your profile picture)
+   - **project-illiberalism.jpg** (For the project on Academic Freedom)
+   - **project-computational.jpg** (For the project on Computational Culture)
+   - **project-productivity.jpg** (For the project on Scientific Productivity)
+   - **project-dropout.jpg** (For the dropout study)
+   - **project-judicial.jpg** (For the judicial independence study)
+   - **project-unhcr.jpg** (For the UNHCR study)
+   - **project-others.jpg** (For the anti-semitism study)
+   - **project-women.jpg** (For the women's empowerment study)
 
-## Deployment to GitHub Pages
-1. Create a repository named `yourusername.github.io`.
-2. Upload these files to the main branch.
-3. Add your `profile.jpg` to the `images/` folder.
-4. Your site will be live at `https://yourusername.github.io`.
+## File Format Note:
+- **CRITICAL:** Use `.jpg` as the file extension. If your files are `.jpeg` or `.JPG`, please rename them to exactly match the lowercase `.jpg` extension to ensure they appear on the site.
+
+## Deployment:
+- Upload all files (excluding this README) to your GitHub repository (e.g., `yourusername.github.io`).
+- Enable GitHub Pages in the repository settings.
