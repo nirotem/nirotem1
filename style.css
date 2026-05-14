@@ -1,5 +1,4 @@
 
-/* --- Scandinavian Modern Academic Theme (Version 11) --- */
 :root {
     --bg-color: #fcfaf7;
     --text-color: #333333;
@@ -75,10 +74,13 @@ main { padding: 60px 0; }
 h2, h3 { color: var(--accent-color); font-weight: 400; }
 h2 { font-size: 2rem; margin-bottom: 35px; }
 
-/* Grid for About and Projects */
 .about-grid { display: flex; gap: 60px; align-items: flex-start; }
 .profile-side { flex: 0 0 280px; text-align: center; }
 .profile-img { width: 100%; border-radius: 4px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+.profile-info { margin-top: 20px; }
+.profile-info .name { font-weight: 600; font-size: 1.25rem; margin: 0; }
+.profile-info .role { font-size: 1rem; color: #777; margin: 8px 0; line-height: 1.4; }
+
 .bio-content { flex: 1; }
 
 .project-card {
@@ -110,29 +112,19 @@ h2 { font-size: 2rem; margin-bottom: 35px; }
 }
 .project-image-box img { max-width: 100%; max-height: 100%; object-fit: contain; }
 
-/* Lighter Side Styles */
 .landscape-hero {
     width: 100%;
     height: 380px;
+    background-color: #eee;
     margin-bottom: 50px;
     overflow: hidden;
     border-radius: 4px;
 }
 .landscape-hero img { width: 100%; height: 100%; object-fit: cover; }
 
-.lighter-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-.interest-card {
-    background: white;
-    padding: 30px;
-    border: 1px solid var(--border-color);
-}
-.interest-card h4 { margin-top: 0; color: var(--nav-active); }
+.lighter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.interest-card { background: white; padding: 30px; border: 1px solid var(--border-color); height: 100%; }
 
-/* Buttons */
 .btn {
     text-decoration: none;
     font-size: 0.85rem;
@@ -146,9 +138,8 @@ h2 { font-size: 2rem; margin-bottom: 35px; }
 }
 .btn:hover { background-color: var(--accent-color); color: white; }
 .btn-spotify { border-color: #1DB954; color: #1DB954; }
-.btn-spotify:hover { background-color: #1DB954; color: white; }
+.btn-spotify:hover { background-color: #1DB954; color: white; border-color: #1DB954; }
 
-/* BibBase Fix */
 .bibbase_paper a[title="Open"], .bibbase_paper i.fa-external-link-alt { display: none !important; }
 
 footer { padding: 80px 0; text-align: center; font-size: 0.85rem; color: #bbb; border-top: 1px solid var(--border-color); }
@@ -160,4 +151,5 @@ footer { padding: 80px 0; text-align: center; font-size: 0.85rem; color: #bbb; b
     .project-image-box { width: 100%; max-width: 100%; height: auto; min-height: 200px; margin-top: 20px; }
     .interest-card { margin-bottom: 20px; }
     .landscape-hero { height: 220px; }
+    header h1 { font-size: 1.8rem; }
 }
